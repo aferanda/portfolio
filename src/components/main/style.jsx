@@ -6,9 +6,14 @@ const appear = keyframes`
   0%, 25%, 75% { opacity: 0 };
 `
 
-const blink = keyframes`
-  0%, 100% { opacity: 0.8 };
-  50% { opacity: 0 };
+const typeWriter = keyframes`
+  from { width: 0 }
+  to { width: 16em }
+`
+
+const blinkCursor = keyframes`
+  from { border-right-color: var(--font-base) }
+  to { border-right-color: transparent }
 `
 
 export const Container = styled.div`
@@ -31,22 +36,14 @@ export const TextContainer = styled.div`
   width: 50%;
 
   @media (max-width: 900px) {
-    width: 100%;
     margin-top: 100px;
     padding: 50px 20px;
     text-align: center;
+    width: 100%;
   }
 
   h1 {
-    display: inline;
-    color: var(--text);
-    font-size: 2.3rem;
-    line-height: 1.2;
-    margin-bottom: var(--spacing-4);
-  }
-
-  #myName {
-    display: inline;
+    animation: ${blinkCursor} .6s steps(20) infinite normal, ${typeWriter} 6s steps(20) 1s normal both;
     background-clip: text;
     background-image: linear-gradient(
       to right,
@@ -54,26 +51,25 @@ export const TextContainer = styled.div`
       var(--purple),
       var(--yellow)
     );
+    border-right: 3px solid var(--font-base);
     color: var(--text);
+    display: inline;
+    font-family: Courier, monospace, serif;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-4);
+    padding-right: 5px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  div::after {
-      content: '|';
-      font-size: 2.3rem;
-      margin-left: 5px;
-      opacity: 1;
-      animation: ${blink} .7s infinite;
-    }
-
   h2 {
+    animation: ${appear} 3s ease 0s 1 normal none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.5;
     margin-bottom: var(--spacing-4);
-    animation: ${appear} 3s ease 0s 1 normal none;
   }
 
   button {

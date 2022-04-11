@@ -3,3 +3,4 @@
   * Vite
   * React
   * Styled-components
+  * Framer-motion

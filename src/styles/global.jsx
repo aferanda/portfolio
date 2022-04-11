@@ -15,7 +15,7 @@ export default createGlobalStyle`
     --red: hsl(0, 100%, 74%);
     --white: #FFF;
 
-    --svg: #ef758c;
+    --font-base: #ef758c;
 
     --text: #1E2126;
     --secondary: #5b7083;
