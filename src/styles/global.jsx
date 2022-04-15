@@ -1,21 +1,26 @@
 import { createGlobalStyle } from 'styled-components'
+import RobotoTtf from './fonts/roboto-mono-v13-latin-regular.ttf';
+import RobotoWoff from './fonts/roboto-mono-v13-latin-regular.woff';
+import RobotoWoff2 from './fonts/roboto-mono-v13-latin-regular.woff2';
 
 export default createGlobalStyle`
-
   @font-face {
-    font-family: '';
-    src: url();
+    font-family: 'Roboto Mono';
+    src: url(${RobotoTtf}) format('ttf'),
+      url(${RobotoWoff}) format('woff'),
+      url(${RobotoWoff2}) format('woff2');
   }
 
   :root {
-    --blue: hsl(248, 32%, 49%);
-    --dark-blue: hsl(249, 10%, 26%);
-    --grayish-blue: hsl(246, 25%, 77%);
-    --green: hsl(154, 59%, 51%);
-    --red: hsl(0, 100%, 74%);
+    --blue: #6055a5;
+    --dark-blue: #3e3c49;
+    --grayish-blue: #b9b6d3;
+    --green: #38cc8c;
+    --red: #ff7a7a;
     --white: #FFF;
 
     --font-base: #ef758c;
+    --glassmorphism: #ffffffbf;
 
     --text: #1E2126;
     --secondary: #5b7083;
@@ -39,9 +44,9 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     background-color: var(--white);
-    color: var(--main-font);
+    color: var(--text);
   }
 `
