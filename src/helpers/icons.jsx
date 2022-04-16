@@ -16,6 +16,8 @@ import express from '../icons/express-109.svg';
 import git from '../icons/git-icon.svg';
 import mongodb from '../icons/mongodb-icon-1.svg';
 import graphql from '../icons/graphql.svg';
+import mocha from '../icons/mocha-1.svg';
+import jest from '../icons/jest-3521517-2945020.webp';
 import linkedin from '../icons/icons8-linkedin-512.png';
 import email from '../icons/icons8-mail-512.png';
 
@@ -38,6 +40,8 @@ export default {
   express,
   mongodb,
   graphql,
+  mocha,
+  jest,
   linkedin,
   email,
 }

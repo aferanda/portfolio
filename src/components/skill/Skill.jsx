@@ -63,6 +63,12 @@ export default function Skill() {
       <div>
         <img src={icons.graphql} alt="" />
       </div>
+      <div>
+        <img src={icons.jest} alt="" />
+      </div>
+      <div>
+        <img src={icons.mocha} alt="" />
+      </div>
     </Container>
   )
 }
