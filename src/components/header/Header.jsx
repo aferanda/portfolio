@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
-import { CircleBack, CircleFront, Container, ImageContainer, TextContainer } from './style';
+import { Container, ImageContainer, TextContainer, Blob } from './style';
 
-import image from '../../images/undraw_proud_coder_re_exuy.svg';
+import woman from '../../images/code-review-animate1.svg';
 
 export default function Header() {
 
@@ -18,11 +18,7 @@ export default function Header() {
   }, [])
 
   return (
-    <Container
-      initial={{ opacity: 0 }}
-      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
-    >
+    <Container>
       <TextContainer>
         <h1>Amanda Fernandes</h1>
         <h2><span ref={textInput}></span></h2>
@@ -30,15 +26,10 @@ export default function Header() {
           <div>Get started</div>
         </button>
       </TextContainer>
-      <ImageContainer
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
-      >
-        <img src={image} alt="developer woman photo" />
+      <ImageContainer>
+        <img src={woman} alt="developer woman photo" />
       </ImageContainer>
-      <CircleBack />
-      <CircleFront />
+      <Blob />
     </Container>
   )
 }

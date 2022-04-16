@@ -69,6 +69,15 @@ export default function Skill() {
       <div>
         <img src={icons.mocha} alt="" />
       </div>
+      <div>
+        <img src={icons.rtl} alt="" />
+      </div>
+      <div>
+        <img src={icons.sinon} alt="" />
+      </div>
+      <div>
+        <img src={icons.postgre} alt="" />
+      </div>
     </Container>
   )
 }

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+import blob from '../../images/blob.svg';
+
 export const Container = styled(motion.header)`
   color: var(--text);
   min-height: 100vh;
@@ -10,11 +12,26 @@ export const Container = styled(motion.header)`
   margin: 0px auto;
   overflow: hidden;
   padding: 0 10%;
+  position: relative;
 
   @media (max-width: 900px) {
     flex-direction: column;
     height: auto;
   }
+`
+
+export const Blob = styled.div`
+  z-index: -5;
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  opacity: 0.2;
+  width: 1000px;
+  height: 1000px;
+  background-image: url(${blob});
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(330deg);
 `
 
 export const CircleBack = styled.div`
@@ -24,8 +41,9 @@ export const CircleBack = styled.div`
   top: -100px;
   left: -200px;
   opacity: 0.4;
-  width: 900px;
-  height: 900px;
+  width: 70%;
+  max-width: 900px;
+  height: 120%;
   border-radius: 50%;
   background-image: linear-gradient(
     to bottom,

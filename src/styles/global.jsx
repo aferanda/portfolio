@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
+
 import RobotoTtf from './fonts/roboto-mono-v13-latin-regular.ttf';
 import RobotoWoff from './fonts/roboto-mono-v13-latin-regular.woff';
 import RobotoWoff2 from './fonts/roboto-mono-v13-latin-regular.woff2';
@@ -20,6 +21,7 @@ export default createGlobalStyle`
     --white: #FFF;
 
     --font-base: #ef758c;
+    --font-base2: #F396AB;
     --glassmorphism: #ffffffbf;
 
     --text: #1E2126;
