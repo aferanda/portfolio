@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import { CircleBack, CircleFront, Container, ImageContainer, TextContainer } from './style';
 
