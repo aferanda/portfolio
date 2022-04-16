@@ -17,6 +17,50 @@ export const Container = styled(motion.header)`
   }
 `
 
+export const CircleBack = styled.div`
+  z-index: -5;
+  float: left;
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  opacity: 0.4;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--pink),
+    var(--purple),
+    var(--yellow)
+  );
+
+  @media (max-width: 900px) {
+    left: -100px;
+    width: 400px;
+    height: 400px;
+  }
+`
+
+export const CircleFront = styled.div`
+  z-index: -4;
+  border-radius: 50%;
+  left: -10px;
+  top: -100px;
+  opacity: 0.4;
+  position: absolute;
+  height: 900px;
+  width: 900px;
+  background-color: var(--glassmorphism);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+
+  @media (max-width: 900px) {
+    left: -100px;
+    width: 400px;
+    height: 400px;
+  }
+`
+
 export const TextContainer = styled.div`
   width: 50%;
 
@@ -39,7 +83,7 @@ export const TextContainer = styled.div`
     display: inline;
     font-family: Montserrat Alternates, monospace, serif;
     font-weight: 700;
-    font-size: 2.8rem;
+    font-size: 3em;
     line-height: 1.2;
     margin-bottom: var(--spacing-4);
     padding-right: 5px;

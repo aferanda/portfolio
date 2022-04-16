@@ -4,3 +4,4 @@
   * React
   * Styled-components
   * Framer-motion
+  * Ityped
