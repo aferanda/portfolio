@@ -18,6 +18,9 @@ import mongodb from '../icons/mongodb-icon-1.svg';
 import graphql from '../icons/graphql.svg';
 import mocha from '../icons/mocha-1.svg';
 import jest from '../icons/jest-3521517-2945020.webp';
+import sinon from '../icons/sinon.png';
+import postgre from '../icons/icons8-postgresql-512.png';
+import rtl from '../icons/octopus-128x128.png';
 import linkedin from '../icons/icons8-linkedin-512.png';
 import email from '../icons/icons8-mail-512.png';
 
@@ -42,6 +45,9 @@ export default {
   graphql,
   mocha,
   jest,
+  sinon,
+  postgre,
+  rtl,
   linkedin,
   email,
 }
