@@ -4,10 +4,15 @@ import styled from 'styled-components';
 export const Container = styled(motion.section)`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 10%;
   position: relative;
   min-height: 100vh;
   width: 100%;
+  background-image: linear-gradient(to top right, #f54269a2, #ffcf6766, transparent);
+
+  // dark-mode
+  /* background-image: linear-gradient(45deg, black, transparent); */
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
@@ -15,55 +20,27 @@ export const Container = styled(motion.section)`
   }
 `
 
-export const Carousel = styled(motion.div)`
+export const Grid = styled(motion.div)`
   width: 50%;
-`
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: end;
 
-export const CircleBack = styled.div`
-  z-index: -5;
-  float: left;
-  position: absolute;
-  right: -250px;
-  opacity: 0.4;
-  width: 900px;
-  height: 900px;
-  border-radius: 50%;
-  background-image: linear-gradient(
-    to bottom,
-    var(--pink),
-    var(--purple),
-    var(--yellow)
-  );
-
-  @media (max-width: 900px) {
-    left: -100px;
-    width: 400px;
-    height: 400px;
-  }
-`
-
-export const CircleFront = styled.div`
-  z-index: -4;
-  border-radius: 50%;
-  height: 900px;
-  right: -10px;
-  opacity: 0.4;
-  position: absolute;
-  width: 900px;
-  background-color: var(--glassmorphism);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-
-  @media (max-width: 900px) {
-    left: -100px;
-    width: 400px;
-    height: 400px;
+  div {
+    width: 100%;
+    height: 250px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: -10px 8px 14px 0px #a9a9a9db;
+    opacity: 0.8;
   }
 `
 
 export const ImageContainer = styled(motion.div)`
   display: flex;
-  justify-content: end;
+  justify-content: flex-start;
   width: 50%;
   z-index: 100;
 

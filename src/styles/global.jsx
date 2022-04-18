@@ -27,9 +27,9 @@ export default createGlobalStyle`
     --text: #1E2126;
     --secondary: #5b7083;
     --border: #ECECF3;
-    --pink: #F5426A;
+    --pink: #f5426a;
     --purple: #CF7CD5;
-    --yellow: #FFCF67;
+    --yellow: #ffcf67;
     --lightgrey: #F5F5FA;
 
     --spacing-1: 4px;
@@ -49,6 +49,6 @@ export default createGlobalStyle`
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     background-color: var(--white);
-    color: var(--text);
+    color: var(--dark-blue);
   }
 `

@@ -8,6 +8,9 @@ export const NavBarStyle = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--glassmorphism);
+  backdrop-filter: blur(4px);
+  z-index: 200;
 
   @media (max-width: 900px){
     display: none;

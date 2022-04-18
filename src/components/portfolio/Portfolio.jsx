@@ -1,13 +1,10 @@
 import React from 'react';
-import { Carousel, CircleBack, CircleFront, Container, ImageContainer } from './style';
-import image from '../../images/undraw_mobile_testing_re_w7yb.svg';
+import { Grid, Container, ImageContainer } from './style';
+import image from '../../images/javascript-frameworks-animate.svg';
 
 export default function Portfolio() {
   return (
     <Container>
-      <Carousel>
-        projetos
-      </Carousel>
       <ImageContainer
         initial={{ opacity: 0 }}
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
@@ -15,8 +12,12 @@ export default function Portfolio() {
       >
         <img src={image} alt="photo of a woman with a laptop on her lap" />
       </ImageContainer>
-      <CircleBack />
-      <CircleFront />
+      <Grid>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </Grid>
     </Container>
   )
 }

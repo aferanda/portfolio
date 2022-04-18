@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled(motion.section)`
   display: flex;
   align-items: center;
-  padding: 100px 10%;
+  padding: 0 10% 100px;
   position: relative;
   width: 100%;
   background-color: var(--white);

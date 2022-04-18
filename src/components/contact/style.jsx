@@ -69,6 +69,7 @@ export const ImageContainer = styled(motion.div)`
 
   img {
     width: 100%;
+    object-position: 50px;
   }
 `;
 
