@@ -7,6 +7,8 @@ export const NavBarStyle = styled.nav`
   height: 80px;
   display: flex;
   align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
   justify-content: space-between;
   background-color: var(--glassmorphism);
   backdrop-filter: blur(4px);
