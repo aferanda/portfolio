@@ -17,6 +17,7 @@ export const Container = styled(motion.header)`
   @media (max-width: 900px) {
     flex-direction: column;
     height: auto;
+    padding: 0 5%;
   }
 `
 
@@ -83,8 +84,11 @@ export const TextContainer = styled.div`
   width: 50%;
 
   @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
-    padding: 50px 20px;
     text-align: center;
     width: 100%;
   }
@@ -107,6 +111,10 @@ export const TextContainer = styled.div`
     padding-right: 5px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 900px) {
+      text-align: center;
+    }
   }
 
   h2 {
