@@ -23,15 +23,60 @@ export const Container = styled(motion.header)`
 export const Blob = styled.div`
   z-index: -5;
   position: absolute;
-  top: -200px;
-  right: -200px;
   opacity: 0.2;
-  width: 1000px;
-  height: 1000px;
   background-image: url(${blob});
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(330deg);
+
+  @media screen and (max-width: 414px) {
+    width: 500px;
+    height: 500px;
+    top: calc(-500px / 5);
+    right: calc(-500px / 5);
+  }
+
+  @media screen and (min-width: 415px) and (max-width: 539px) {
+    width: 600px;
+    height: 600px;
+    top: calc(-600px / 5);
+    right: calc(-600px / 5);
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 768px) {
+    width: 700px;
+    height: 700px;
+    top: calc(-700px / 5);
+    right: calc(-700px / 5);
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    width: 800px;
+    height: 800px;
+    top: calc(-800px / 5);
+    right: calc(-800px / 5);
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    width: 900px;
+    height: 900px;
+    top: calc(-900px / 5);
+    right: calc(-900px / 5);
+  }
+
+  @media screen and (min-width: 1441px) and (max-width: 2560px) {
+    width: 1125px;
+    height: 1125px;
+    top: calc(-1125px / 5);
+    right: calc(-1125px / 5);
+  }
+
+  @media screen and (min-width: 2560px) {
+    width: 2000px;
+    height: 2000px;
+    top: calc(-2000px / 5);
+    right: calc(-2000px / 5);
+  }
 `
 
 export const TextContainer = styled.div`
