@@ -33,12 +33,12 @@ export const Slider = styled(Swiper)`
 
     img {
       width: 50%;
-      padding: 2%;
+      padding-right: 40px;
       object-fit: cover;
     }
 
     div {
-      padding: 8%;
+      padding-left: 60px;
       width: 50%;
     }
   }

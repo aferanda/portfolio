@@ -7,7 +7,6 @@ import todolist from '../../images/todolist.png';
 import trybewallet from '../../images/trybewallet.png';
 import trybetunes from '../../images/trybetunes.png';
 import tryunfo from '../../images/tryunfo.png';
-import quackfoods from '../../images/quackfoods.png';
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -55,15 +54,6 @@ export default function Portfolio() {
         </SwiperSlide>
         <SwiperSlide>
           <img src={tryunfo} />
-          <div>
-          <div>
-            <h3>To Do List</h3>
-            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
-          </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={quackfoods} />
           <div>
             <h3>To Do List</h3>
             <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
