@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './style';
-import icons from '../../helpers/icons';
+import icons from '../../utils/icons';
 
 export default function Skill() {
   return (

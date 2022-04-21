@@ -1,23 +1,75 @@
 import React from 'react';
-import { Grid, Container, ImageContainer } from './style';
-import image from '../../images/javascript-frameworks-animate.svg';
+
+import { SwiperSlide } from "swiper/react";
+
+import { Container, Slider } from './style';
+import todolist from '../../images/todolist.png';
+import trybewallet from '../../images/trybewallet.png';
+import trybetunes from '../../images/trybetunes.png';
+import tryunfo from '../../images/tryunfo.png';
+import quackfoods from '../../images/quackfoods.png';
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Portfolio() {
   return (
     <Container>
-      <ImageContainer
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
+      <Slider
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
       >
-        <img src={image} alt="photo of a woman with a laptop on her lap" />
-      </ImageContainer>
-      <Grid>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </Grid>
+        <SwiperSlide>
+          <img src={todolist} />
+          <div>
+            <h3>To Do List</h3>
+            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={trybewallet} />
+          <div>
+            <h3>To Do List</h3>
+            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={trybetunes} />
+          <div>
+            <h3>To Do List</h3>
+            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={tryunfo} />
+          <div>
+          <div>
+            <h3>To Do List</h3>
+            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={quackfoods} />
+          <div>
+            <h3>To Do List</h3>
+            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
+          </div>
+        </SwiperSlide>
+      </Slider>
     </Container>
   )
 }

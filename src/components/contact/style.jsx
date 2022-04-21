@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
+import blob from '../../images/blob.svg';
+
 export const Container = styled(motion.section)`
   display: flex;
   align-items: center;
   padding: 0 10%;
   position: relative;
-  min-height: 100vh;
+  height: 900px;
   width: 100%;
+  overflow: hidden;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
@@ -15,46 +18,18 @@ export const Container = styled(motion.section)`
   }
 `
 
-export const CircleBack = styled.div`
+export const Blob = styled.div`
   z-index: -5;
-  float: left;
   position: absolute;
-  left: -250px;
-  opacity: 0.4;
-  width: 900px;
-  height: 900px;
-  border-radius: 50%;
-  background-image: linear-gradient(
-    to bottom,
-    var(--pink),
-    var(--purple),
-    var(--yellow)
-  );
-
-  @media (max-width: 900px) {
-    left: -100px;
-    width: 400px;
-    height: 400px;
-  }
-`
-
-export const CircleFront = styled.div`
-  z-index: -4;
-  border-radius: 50%;
-  height: 900px;
-  left: -10px;
-  opacity: 0.4;
-  position: absolute;
-  width: 900px;
-  background-color: var(--glassmorphism);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-
-  @media (max-width: 900px) {
-    left: -100px;
-    width: 400px;
-    height: 400px;
-  }
+  bottom: -300px;
+  left: -400px;
+  opacity: 0.2;
+  width: 1300px;
+  height: 1300px;
+  background-image: url(${blob});
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(117deg);
 `
 
 export const ImageContainer = styled(motion.div)`
@@ -70,6 +45,7 @@ export const ImageContainer = styled(motion.div)`
   img {
     width: 100%;
     object-position: 50px;
+    transform: scaleX(-1);
   }
 `;
 
