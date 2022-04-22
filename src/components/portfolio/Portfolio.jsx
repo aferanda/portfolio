@@ -3,20 +3,16 @@ import React from 'react';
 import { SwiperSlide } from "swiper/react";
 
 import { Container, Slider } from './style';
-import todolist from '../../images/todolist.png';
-import trybewallet from '../../images/trybewallet.png';
-import trybetunes from '../../images/trybetunes.png';
-import tryunfo from '../../images/tryunfo.png';
+import { projects } from '../../assets/data/projects';
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Portfolio() {
   return (
-    <Container>
+    <Container id='projects'>
       <Slider
         spaceBetween={30}
         centeredSlides={true}
@@ -31,34 +27,15 @@ export default function Portfolio() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src={todolist} />
-          <div>
-            <h3>To Do List</h3>
-            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={trybewallet} />
-          <div>
-            <h3>To Do List</h3>
-            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={trybetunes} />
-          <div>
-            <h3>To Do List</h3>
-            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={tryunfo} />
-          <div>
-            <h3>To Do List</h3>
-            <p>Aplicação web lista de tarefas, com funcionalidades de incluir, marcar como concluído, reordernar e remover.</p>
-          </div>
-        </SwiperSlide>
+        {projects.map(({ img, title, description }) => (
+          <SwiperSlide key={img}>
+            <img src={img} />
+            <div>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </div>
+          </SwiperSlide>
+        ))}
       </Slider>
     </Container>
   )
