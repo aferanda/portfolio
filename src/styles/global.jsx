@@ -51,4 +51,8 @@ export default createGlobalStyle`
     background-color: var(--white);
     color: var(--dark-blue);
   }
+
+  a {
+    text-decoration: none;
+  }
 `

@@ -15,9 +15,9 @@ export const Container = styled(motion.section)`
     z-index: 20px;
 
     @media (max-width: 900px) {
-    height: auto;
-    padding: 0 10%;
-  }
+      height: auto;
+      padding: 0 5%;
+    }
 
   div {
     border: 3px solid var(--border);

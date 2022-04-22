@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import blob from '../../images/blob.svg';
+import blob from '../../assets/images/blob.svg';
 
 export const Container = styled(motion.header)`
   color: var(--text);
@@ -58,25 +58,32 @@ export const Blob = styled.div`
     right: calc(-800px / 5);
   }
 
-  @media screen and (min-width: 1025px) and (max-width: 1440px) {
+  @media screen and (min-width: 1025px) and (max-width: 1250px) {
     width: 900px;
     height: 900px;
     top: calc(-900px / 5);
     right: calc(-900px / 5);
   }
 
-  @media screen and (min-width: 1441px) and (max-width: 2560px) {
-    width: 1125px;
-    height: 1125px;
-    top: calc(-1125px / 5);
-    right: calc(-1125px / 5);
+  @media screen and (min-width: 1251px) and (max-width: 1600px) {
+    width: 1000px;
+    height: 1000px;
+    top: calc(-1000px / 5);
+    right: calc(-1000px / 5);
   }
 
-  @media screen and (min-width: 2560px) {
-    width: 2000px;
-    height: 2000px;
-    top: calc(-2000px / 5);
-    right: calc(-2000px / 5);
+  @media screen and (min-width: 1601px) and (max-width: 2250px) {
+    width: 1100px;
+    height: 1100px;
+    top: calc(-1100px / 5);
+    right: calc(-1100px / 5);
+  }
+
+  @media screen and (min-width: 2250px) {
+    width: 1300px;
+    height: 1300px;
+    top: calc(-1300px / 5);
+    right: calc(-1300px / 5);
   }
 `
 
@@ -140,6 +147,7 @@ export const TextContainer = styled.div`
     transition: all 0.2s ease-in-out 0s;
 
     div {
+      font-family: Montserrat Alternates, monospace, serif;
       background-image: linear-gradient(
         to right,
         var(--pink),

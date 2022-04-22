@@ -9,18 +9,20 @@ export const Container = styled(motion.section)`
   padding: 0 10%;
   position: relative;
   width: 100%;
-
-  // dark-mode
   /* background-image: linear-gradient(45deg, black, transparent); */
 
   @media (max-width: 900px) {
-    flex-direction: column-reverse;
     height: auto;
+    padding: 0 5%;
   }
 `
 
 export const Slider = styled(Swiper)`
   width: 100%;
+
+  @media (max-width: 900px) {
+    margin: 5% 0;
+  }
 
   .swiper-slide {
     display: flex;
@@ -28,18 +30,37 @@ export const Slider = styled(Swiper)`
     background-position: center;
     background-size: cover;
     flex-direction: row-reverse;
-    /* width: 520px; */
     height: 520px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     img {
       width: 50%;
       padding-right: 40px;
       object-fit: cover;
+
+      @media (max-width: 900px) {
+        padding: 0;
+      }
     }
 
     div {
       padding-left: 60px;
       width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5%;
+
+      @media (max-width: 900px) {
+        padding: 0 0 5%;
+        text-align: center;
+        gap: 10%;
+      }
     }
   }
 `
