@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import { Container, ImageContainer, TextContainer, Blob } from './style';
 
-import woman from '../../images/code-review-animate1.svg';
+import woman from '../../assets/images/code-review-animate.svg';
 
 export default function Header() {
 
@@ -18,12 +18,14 @@ export default function Header() {
   }, [])
 
   return (
-    <Container>
+    <Container id='hero'>
       <TextContainer>
         <h1>Amanda Fernandes</h1>
         <h2><span ref={textInput}></span></h2>
         <button>
-          <div>Get started</div>
+          <a href='#about'>
+            <div>About Me</div>
+          </a>
         </button>
       </TextContainer>
       <ImageContainer>

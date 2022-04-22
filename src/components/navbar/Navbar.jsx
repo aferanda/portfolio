@@ -16,8 +16,8 @@ export default function NavBar() {
 
   return (
     <NavBarStyle>
-      <p>Image</p>
-      <p>Get started</p>
+      <p>Logo</p>
+      <p>About Me</p>
     </NavBarStyle>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { Blob, Container, ImageContainer, TextContainer } from './style';
-import image from '../../images/contact-us-animate.svg';
+import image from '../../assets/images/contact-us-animate.svg';
 
 export default function Contact() {
   return (
-    <Container>
+    <Container id='contact'>
       <ImageContainer
         initial={{ opacity: 0 }}
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
@@ -13,8 +13,7 @@ export default function Contact() {
       >
         <img src={image} alt="photo of a woman with a laptop on her lap" />
       </ImageContainer>
-      <TextContainer>
-      </TextContainer>
+      <TextContainer />
       <Blob />
     </Container>
   )
