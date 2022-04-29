@@ -3,94 +3,98 @@ import icons from '../../utils/icons';
 export const skills = [
   {
     img: icons.html,
-    description: "html",
+    description: "HTML",
   },
   {
     img: icons.css,
-    description: "css",
+    description: "CSS",
   },
   {
     img: icons.javascript,
-    description: "javascript",
+    description: "JavaScript",
   },
   {
     img: icons.react,
-    description: "react",
+    description: "React",
   },
   {
     img: icons.redux,
-    description: "redux",
+    description: "Redux",
   },
   {
     img: icons.git,
-    description: "git",
+    description: "Git",
   },
   {
     img: icons.github,
-    description: "github",
+    description: "GitHub",
   },
   {
     img: icons.sass,
-    description: "sass",
+    description: "Sass",
   },
   {
     img: icons.styled,
-    description: "styled",
+    description: "Styled Components",
   },
   {
     img: icons.docker,
-    description: "docker",
+    description: "Docker",
   },
   {
     img: icons.node,
-    description: "node",
+    description: "Nodejs",
   },
   {
     img: icons.express,
-    description: "express",
+    description: "Express",
   },
   {
     img: icons.typescript,
-    description: "typescript",
+    description: "Typescript",
   },
   {
     img: icons.python,
-    description: "python",
+    description: "Python",
   },
   {
     img: icons.swift,
-    description: "swift",
+    description: "Swift",
   },
   {
     img: icons.mysql,
-    description: "mysql",
+    description: "MySQL",
   },
   {
     img: icons.postgre,
-    description: "postgre",
+    description: "Postgre",
   },
   {
     img: icons.graphql,
-    description: "graphql",
+    description: "Graphql",
   },
   {
     img: icons.mongodb,
-    description: "mongodb",
+    description: "Mongodb",
   },
   {
     img: icons.rtl,
-    description: "rtl",
+    description: "React Testing Library",
   },
   {
     img: icons.jest,
-    description: "jest",
+    description: "Jest",
   },
   {
     img: icons.mocha,
-    description: "mocha",
+    description: "Mocha",
+  },
+  {
+    img: icons.chai,
+    description: "Chai",
   },
   {
     img: icons.sinon,
-    description: "sinon",
+    description: "Sinon",
   },
 ]

@@ -17,6 +17,7 @@ import git from '../assets/icons/git-icon.svg';
 import mongodb from '../assets/icons/mongodb-icon-1.svg';
 import graphql from '../assets/icons/graphql.svg';
 import mocha from '../assets/icons/mocha-1.svg';
+import chai from '../assets/icons/chai.png';
 import jest from '../assets/icons/jest-3521517-2945020.webp';
 import sinon from '../assets/icons/sinon.png';
 import postgre from '../assets/icons/icons8-postgresql-512.png';
@@ -44,6 +45,7 @@ export default {
   mongodb,
   graphql,
   mocha,
+  chai,
   jest,
   sinon,
   postgre,

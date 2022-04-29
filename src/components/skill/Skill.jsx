@@ -13,7 +13,7 @@ export default function Skill() {
     >
       {skills.map(({ img, description }) => (
         <div key={ description }>
-          <img src={ img } alt={ description } />
+          <img src={ img } title={ description } alt={ description } />
         </div>
       ))}
     </Container>
