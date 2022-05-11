@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from './style';
 import { skills } from '../../assets/data/skills'
 
-export default function Skill() {
+export function Skill() {
   return (
     <Container
       id='skills'

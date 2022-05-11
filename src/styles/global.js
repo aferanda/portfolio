@@ -4,7 +4,7 @@ import RobotoTtf from './fonts/roboto-mono-v13-latin-regular.ttf';
 import RobotoWoff from './fonts/roboto-mono-v13-latin-regular.woff';
 import RobotoWoff2 from './fonts/roboto-mono-v13-latin-regular.woff2';
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Roboto Mono';
     src: url(${RobotoTtf}) format('ttf'),

@@ -4,7 +4,7 @@ import { Container, ImageContainer, TextContainer, Blob } from './style';
 
 import woman from '../../assets/images/code-review-animate.svg';
 
-export default function Header() {
+export function Header() {
 
   const textInput = useRef();
 

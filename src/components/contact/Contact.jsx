@@ -3,7 +3,7 @@ import React from 'react';
 import { Blob, Container, ImageContainer, TextContainer } from './style';
 import image from '../../assets/images/contact-us-animate.svg';
 
-export default function Contact() {
+export function Contact() {
   return (
     <Container id='contact'>
       <ImageContainer

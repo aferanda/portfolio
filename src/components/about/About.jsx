@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './style';
 
-export default function About() {
+export function About() {
   return (
     <Container
       id='about'

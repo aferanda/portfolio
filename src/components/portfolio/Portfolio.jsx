@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export default function Portfolio() {
+export function Portfolio() {
   return (
     <Container
       id='projects'

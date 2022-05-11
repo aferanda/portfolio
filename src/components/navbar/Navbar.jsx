@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { NavBarStyle } from './style'
 
-export default function NavBar() {
+export function NavBar() {
 
   useEffect(() => {
     window.onscroll = () => {
