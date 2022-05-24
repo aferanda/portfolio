@@ -7,10 +7,12 @@ import docker from '../assets/icons/icons8-docker-512.png';
 import python from '../assets/icons/python-5.svg';
 import react from '../assets/icons/react-2.svg';
 import redux from '../assets/icons/redux.svg';
+import next from '../assets/icons/next-js-seeklogo.com.svg';
 import sass from '../assets/icons/sass-1.svg';
 import swift from '../assets/icons/swift.png';
 import typescript from '../assets/icons/typescript.png';
 import styled from '../assets/icons/styled-components.png';
+import tailwind from '../assets/icons/tailwind-css-seeklogo.com.svg';
 import github from '../assets/icons/github-icon-1.svg';
 import express from '../assets/icons/express-109.svg';
 import git from '../assets/icons/git-icon.svg';
@@ -21,6 +23,7 @@ import chai from '../assets/icons/chai.png';
 import jest from '../assets/icons/jest-3521517-2945020.webp';
 import sinon from '../assets/icons/sinon.png';
 import postgre from '../assets/icons/icons8-postgresql-512.png';
+import prisma from '../assets/icons/prisma-seeklogo.com.svg';
 import rtl from '../assets/icons/octopus-128x128.png';
 import linkedin from '../assets/icons/icons8-linkedin-512.png';
 import email from '../assets/icons/icons8-mail-512.png';
@@ -36,6 +39,7 @@ export default {
   react,
   redux,
   sass,
+  tailwind,
   swift,
   typescript,
   styled,
@@ -49,7 +53,9 @@ export default {
   jest,
   sinon,
   postgre,
+  prisma,
   rtl,
+  next,
   linkedin,
   email,
 }

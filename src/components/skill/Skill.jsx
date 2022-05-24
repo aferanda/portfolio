@@ -11,10 +11,12 @@ export function Skill() {
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
     >
-      {skills.map(({ img, description }) => (
-        <div key={ description }>
-          <img src={ img } title={ description } alt={ description } />
-        </div>
+      {skills.map(({ img, description, link }) => (
+        <a key={description} href={link} target="_blank" rel="noreferrer" >
+          <div data-content={description} >
+            <img src={img} title={description} alt={description} />
+          </div>
+        </a>
       ))}
     </Container>
   )
