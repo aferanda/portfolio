@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Container = styled(motion.header)`
   color: ${props => props.theme.text};
-  height: calc(100vh - 5rem);
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
