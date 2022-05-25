@@ -32,12 +32,18 @@ export function Portfolio() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {projects.map(({ img, title, description }) => (
+        {projects.map(({ img, title, tech, description, url }) => (
           <SwiperSlide key={img}>
             <img src={img} />
             <div>
               <h3>{title}</h3>
+              <span>{tech}</span>
               <p>{description}</p>
+              <a href={url} target="_blank" rel="noreferrer">
+                <button type="button">
+                  Preview
+                </button>
+              </a>
             </div>
           </SwiperSlide>
         ))}
