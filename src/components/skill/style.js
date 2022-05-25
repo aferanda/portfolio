@@ -7,7 +7,6 @@ export const Container = styled(motion.section)`
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--white);
     padding: 0 20% 100px;
     position: relative;
     width: 100%;
@@ -20,7 +19,7 @@ export const Container = styled(motion.section)`
     }
 
   div {
-    border: 3px solid var(--border);
+    border: 3px solid ${props => props.theme.border};
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -28,10 +27,11 @@ export const Container = styled(motion.section)`
     width: 100px;
     height: 100px;
     transition: all 0.2s;
+    background: ${props => props.theme.background};
 
     &:hover {
       cursor: pointer;
-      border: 3px solid var(--pink);
+      border: 3px solid ${props => props.theme.border};
       box-shadow: 2px 3px 20px 0px #00000038;
       transform: scale(1.1);
 
@@ -50,8 +50,8 @@ export const Container = styled(motion.section)`
         width: 100%;
         font-weight: 700;
         font-size: 0.8rem;
-        color: var(--pink);
-        background: #fff;
+        color: ${props => props.theme.text};
+        background: ${props => props.theme.background};
         opacity: 0.9;
       }
     }

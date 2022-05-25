@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import { Container, ImageContainer, TextContainer, Blob } from './style';
 
-import woman from '../../assets/images/code-review-animate.svg';
+import imgLight from '../../assets/images/code-review-animate.svg';
+import imgDark from '../../assets/images/code-review-animate-dark.svg';
 
-export function Header() {
+export function Header({ isDarkTheme }) {
 
   const textInput = useRef();
 
@@ -29,7 +31,7 @@ export function Header() {
         </button>
       </TextContainer>
       <ImageContainer>
-        <img src={woman} alt="developer woman photo" />
+        <img src={isDarkTheme ? imgDark : imgLight} alt="developer woman photo" />
       </ImageContainer>
       <Blob />
     </Container>

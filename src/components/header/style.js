@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import blob from '../../assets/images/blob.svg';
-
 export const Container = styled(motion.header)`
-  color: var(--text);
-  min-height: 100vh;
+  color: ${props => props.theme.text};
+  height: calc(100vh - 5rem);
   width: 100%;
   display: flex;
   align-items: center;
@@ -25,7 +23,7 @@ export const Blob = styled.div`
   z-index: -5;
   position: absolute;
   opacity: 0.2;
-  background-image: url(${blob});
+  background-image: ${props => props.theme.blob};
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(330deg);
@@ -102,12 +100,7 @@ export const TextContainer = styled.div`
 
   h1 {
     background-clip: text;
-    background-image: linear-gradient(
-      to right,
-      var(--pink),
-      var(--purple),
-      var(--yellow)
-    );
+    background-image: ${props => props.theme.gradient};
     color: var(--text);
     display: inline;
     font-family: Montserrat Alternates, monospace, serif;
@@ -129,7 +122,7 @@ export const TextContainer = styled.div`
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 2;
-    color: var(--dark-blue);
+    color: ${props => props.theme.text};
     margin-bottom: var(--spacing-4);
   }
 

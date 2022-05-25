@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import blob from '../../assets/images/blob.svg';
-
 export const Container = styled(motion.section)`
   display: flex;
   align-items: center;
@@ -23,7 +21,7 @@ export const Blob = styled.div`
   z-index: -5;
   position: absolute;
   opacity: 0.2;
-  background-image: url(${blob});
+  background-image: ${props => props.theme.blob};
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotate(117deg);

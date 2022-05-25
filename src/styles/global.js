@@ -13,9 +13,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --blue: #6055a5;
-    --dark-blue: #3e3c49;
-    --grayish-blue: #b9b6d3;
+    --blue: #6055a5; // rgb(96, 85, 165)
+    --roxo: #5F458C; // rgb(95, 69, 140)
+    --denovo: #633BBC; // rgb(99, 59, 188)
+    --dark-blue: #3e3c49; // rgb(62, 60, 73)
+    --background-dark: #191622;
+    --grayish-blue: #b9b6d3; // rgb(185, 182, 211)
     --green: #38cc8c;
     --red: #ff7a7a;
     --white: #FFF;
@@ -48,8 +51,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
-    background-color: var(--white);
-    color: var(--dark-blue);
+    background: ${props => props.theme.background};
+    color: ${props => props.theme.text};
   }
 
   a {

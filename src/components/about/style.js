@@ -8,7 +8,6 @@ export const Container = styled(motion.section)`
   padding: 0 10% 100px;
   position: relative;
   width: 100%;
-  background-color: var(--white);
   flex-wrap: wrap;
 
   @media (max-width: 900px) {
