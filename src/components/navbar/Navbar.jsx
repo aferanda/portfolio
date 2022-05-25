@@ -4,21 +4,19 @@ import { BsFillMoonStarsFill, BsSun } from 'react-icons/bs';
 import { NavBarStyle } from './style';
 
 export function NavBar({ isDarkTheme, setIsDarkTheme }) {
-  // useEffect(() => {
-  //   window.onscroll = () => {
-  //     const navBar = document.querySelector('nav');
-  //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-  //       navBar.style.opacity = 1;
-  //     } else {
-  //       navBar.style.opacity = 0;
-  //     }
-  //   }
-  // }, [])
+  useEffect(() => {
+    window.onscroll = () => {
+      const navBar = document.querySelector('nav');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navBar.id = 'scroll';
+      } else {
+        navBar.id = 'top';
+      }
+    }
+  }, []);
 
   return (
-    <NavBarStyle>
-      <p>Logo</p>
-      <p>About Me</p>
+    <NavBarStyle id="top">
       <button
         type="button"
         onClick={() => setIsDarkTheme(!isDarkTheme)}

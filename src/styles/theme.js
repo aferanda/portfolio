@@ -9,6 +9,8 @@ export const lightTheme = {
   accent: 'var(--background-dark)',
   blob: `url(${blobLight})`,
   position: 'end',
+  button: 'var(--font-base)',
+  navbar: 'rgba(255, 255, 255, 0.75)',
 }
 
 export const darkTheme = {
@@ -19,4 +21,6 @@ export const darkTheme = {
   accent: 'var(--white)',
   blob: `url(${blobDark})`,
   position: 'start',
+  button: 'var(--roxo)',
+  navbar: 'rgba(25, 22, 34, 0.75)',
 }

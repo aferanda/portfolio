@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const NavBarStyle = styled.nav`
   padding: 0 10%;
@@ -8,20 +8,26 @@ export const NavBarStyle = styled.nav`
   display: flex;
   align-items: center;
   transition: all 0.3s;
-  justify-content: space-between;
+  justify-content: end;
+  background: transparent;
   z-index: 10;
+
+  &#scroll {
+    background: ${props => props.theme.navbar};
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  }
 
   @media (max-width: 900px){
     display: none;
   }
 
   button {
-    background: ${props => props.theme.background};
+    background: ${props => props.theme.button};
     border: none;
     border-radius: 35px;
     cursor: pointer;
     width: 80px;
-    /* height: 35px; */
     padding: 3px;
 
     display: flex;

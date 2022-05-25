@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     --roxo: #5F458C; // rgb(95, 69, 140)
     --denovo: #633BBC; // rgb(99, 59, 188)
     --dark-blue: #3e3c49; // rgb(62, 60, 73)
-    --background-dark: #191622;
+    --background-dark: #191622; // rgb(25, 22, 34)
     --grayish-blue: #b9b6d3; // rgb(185, 182, 211)
     --green: #38cc8c;
     --red: #ff7a7a;
