@@ -25,7 +25,6 @@ export function Contact() {
           <div>
             <FaGithub />
             <h4>GitHub</h4>
-            {/* <span>github.com/aferanda</span> */}
           </div>
         </a>
         <a
@@ -36,14 +35,12 @@ export function Contact() {
           <div>
             <FaLinkedin />
             <h4>LinkedIn</h4>
-            {/* <span>linkedin.com/in/aferanda</span> */}
           </div>
         </a>
         <a href="mailto:aferanda@gmail.com">
           <div>
             <MdEmail />
             <h4>Email</h4>
-            {/* <span>aferanda@gmail.com</span> */}
           </div>
         </a>
       </TextContainer>

@@ -94,9 +94,8 @@ export const ImageContainer = styled(motion.div)`
   }
 
   img {
-    width: 100%;
-    object-position: 50px;
-    transform: scaleX(-1);
+    width: 130%;
+    max-width: 700px;
   }
 `;
 
@@ -105,7 +104,7 @@ export const TextContainer = styled(motion.div)`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 25px;
 
@@ -115,7 +114,6 @@ export const TextContainer = styled(motion.div)`
 
   a {
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px;
     border: none;
     border-radius: 12px;
     background: transparent;

@@ -35,10 +35,11 @@ export const NavBarStyle = styled.nav`
     svg {
       width: 30px;
       height: 30px;
-      color: ${props => props.theme.iconTheme};
-      background: ${props => props.theme.background};
+      color: ${props => props.theme.iconColor};
+      background: ${props => props.theme.iconBg};
       border-radius: 50%;
       padding: 5px;
+      transform: scaleX(-1);
     }
   }
 `

@@ -122,7 +122,7 @@ export const TextContainer = styled.div`
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 2;
-    color: ${props => props.theme.text};
+    color: ${props => props.theme.textDeveloper};
     margin-bottom: var(--spacing-4);
   }
 
@@ -196,6 +196,6 @@ export const ImageContainer = styled(motion.div)`
 
   img {
     width: 100%;
-    /* transform: scaleX(-1); */
+    transform: scaleX(-1);
   }
 `;

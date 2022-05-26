@@ -22,11 +22,11 @@ export const GlobalStyle = createGlobalStyle`
     --dark-800: #1E2126;
     --dark-900: #191622;
 
-    --blue-500: #6055a5;
-
     --purple-600: #5D4375;
+    --purple-700: #38344a;
     --purple-900: #2E2139;
 
+    --blue-500: #6055a5;
     --red-300: #ef758c;
     --red-400: #f5426a;
     --malva-300: #CF7CD5;
@@ -50,6 +50,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     background: ${props => props.theme.background};
     color: ${props => props.theme.text};
+    position: relative;
   }
 
   a {
