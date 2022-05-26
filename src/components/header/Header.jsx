@@ -26,7 +26,7 @@ export function Header({ isDarkTheme }) {
         <h2><span ref={textInput}></span></h2>
         <button>
           <a href='#about'>
-            <div>About Me</div>
+            <div>Contact me</div>
           </a>
         </button>
       </TextContainer>

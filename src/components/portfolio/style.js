@@ -48,18 +48,49 @@ export const Slider = styled(Swiper)`
     }
 
     div {
+      font-family: 'Poppins', sans-serif;
       padding-left: 60px;
       width: 50%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 5%;
 
       @media (max-width: 900px) {
         padding: 0 0 5%;
         text-align: center;
-        gap: 10%;
+      }
+
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      button {
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 2rem;
+        width: 5rem;
+        background-color: ${props => props.theme.button};
+        color: ${props => props.theme.textButton};
+        box-shadow: 1px 1px 2px 0px #00000061;
+        font-family: 'Poppins', sans-serif;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
       }
     }
   }

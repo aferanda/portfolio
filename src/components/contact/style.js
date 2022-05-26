@@ -103,29 +103,47 @@ export const ImageContainer = styled(motion.div)`
 export const TextContainer = styled(motion.div)`
   width: 50%;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
   @media (max-width: 900px) {
-      width: 100%;
-    }
-
-  div {
-    shape-outside: ellipse(200px 500px at 10% 50%);
-    width: 400px;
-    height: 1000px;
-    float: left;
-    opacity: .2;
-
-    @media (max-width: 900px) {
-      display: none;
-    }
+    width: 100%;
   }
 
-  p {
-    font-size: 1.2em;
-    line-height: 30px;
+  a {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    text-decoration: none;
+    color: ${props => props.theme.textButton};
 
-    @media (max-width: 900px) {
-      text-align: center;
-      text-indent: 30px;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+
+    div {
+      box-shadow: 2px 2px 5px 0 rgb(0,0,0, 0.4);
+      background: ${props => props.theme.contact};
+      border-radius: 12px;
+      width: 11rem;
+      height: 7rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 `

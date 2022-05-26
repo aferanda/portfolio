@@ -18,10 +18,6 @@ export const NavBarStyle = styled.nav`
     -webkit-backdrop-filter: blur(16px) saturate(180%);
   }
 
-  @media (max-width: 900px){
-    display: none;
-  }
-
   button {
     background: ${props => props.theme.button};
     border: none;
@@ -34,11 +30,13 @@ export const NavBarStyle = styled.nav`
     align-items: center;
     justify-content: ${props => props.theme.position};
 
+    transition: all 0.2s;
+
     svg {
       width: 30px;
       height: 30px;
-      color: ${props => props.theme.background};
-      background: ${props => props.theme.accent};
+      color: ${props => props.theme.iconTheme};
+      background: ${props => props.theme.background};
       border-radius: 50%;
       padding: 5px;
     }

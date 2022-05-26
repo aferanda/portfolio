@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 import { Blob, Container, ImageContainer, TextContainer } from './style';
 import image from '../../assets/images/contact-us-animate.svg';
@@ -13,8 +15,38 @@ export function Contact() {
       >
         <img src={image} alt="photo of a woman with a laptop on her lap" />
       </ImageContainer>
-      <TextContainer />
+      <TextContainer>
+        <a
+          href="https://github.com/aferanda"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <FaGithub />
+            <h4>GitHub</h4>
+            {/* <span>github.com/aferanda</span> */}
+          </div>
+        </a>
+        <a
+          href="https://linkedin.com/in/aferanda"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div>
+            <FaLinkedin />
+            <h4>LinkedIn</h4>
+            {/* <span>linkedin.com/in/aferanda</span> */}
+          </div>
+        </a>
+        <a href="mailto:aferanda@gmail.com">
+          <div>
+            <MdEmail />
+            <h4>Email</h4>
+            {/* <span>aferanda@gmail.com</span> */}
+          </div>
+        </a>
+      </TextContainer>
       <Blob />
-    </Container>
+    </Container >
   )
 }
