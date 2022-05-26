@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
 
     --dark-600: #3e3c49;
     --dark-800: #1E2126;
-    --dark-900: #191622;
+    --dark-900: #121212;
 
     --purple-600: #5D4375;
     --purple-700: #38344a;
