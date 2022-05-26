@@ -100,7 +100,7 @@ export const TextContainer = styled.div`
 
   h1 {
     background-clip: text;
-    background-image: ${props => props.theme.gradient};
+    background: ${props => props.theme.gradient};
     color: var(--text);
     display: inline;
     font-family: Montserrat Alternates, monospace, serif;
@@ -130,7 +130,7 @@ export const TextContainer = styled.div`
     background: var(--white);
     border-radius: 14px;
     border: none;
-    box-shadow: 0 0 0 3px var(--border);
+    box-shadow: 0 0 0 3px var(--grey-200);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
@@ -141,12 +141,7 @@ export const TextContainer = styled.div`
 
     div {
       font-family: Montserrat Alternates, monospace, serif;
-      background-image: linear-gradient(
-        to right,
-        var(--pink),
-        var(--purple),
-        var(--yellow)
-      );
+      background: ${props => props.theme.gradient};
       background-clip: text;
       color: var(--text);
       -webkit-background-clip: text;
@@ -158,9 +153,9 @@ export const TextContainer = styled.div`
     backface-visibility: hidden;
     background: linear-gradient(
       -45deg,
-      var(--pink),
-      var(--purple),
-      var(--yellow)
+      var(--red-400),
+      var(--malva-300),
+      var(--maize-300)
     );
     border-radius: 17px;
     content: '';
@@ -176,7 +171,7 @@ export const TextContainer = styled.div`
   }
 
   button:active {
-    background: var(--lightgrey);
+    background: var(--grey-100);
   }
 
   button:hover {
@@ -201,5 +196,6 @@ export const ImageContainer = styled(motion.div)`
 
   img {
     width: 100%;
+    /* transform: scaleX(-1); */
   }
 `;

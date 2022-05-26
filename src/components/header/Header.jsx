@@ -3,8 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import { Container, ImageContainer, TextContainer, Blob } from './style';
 
-import imgLight from '../../assets/images/code-review-animate.svg';
-import imgDark from '../../assets/images/code-review-animate-dark.svg';
+import { imgLight, imgDark } from '../../assets/images';
 
 export function Header({ isDarkTheme }) {
 
@@ -20,14 +19,12 @@ export function Header({ isDarkTheme }) {
   }, [])
 
   return (
-    <Container id='hero'>
+    <Container>
       <TextContainer>
         <h1>Amanda Fernandes</h1>
         <h2><span ref={textInput}></span></h2>
         <button>
-          <a href='#about'>
-            <div>Contact me</div>
-          </a>
+          <div>Contact me</div>
         </button>
       </TextContainer>
       <ImageContainer>

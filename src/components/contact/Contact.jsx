@@ -3,17 +3,18 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 import { Blob, Container, ImageContainer, TextContainer } from './style';
-import image from '../../assets/images/contact-us-animate.svg';
+
+import { contact } from '../../assets/images';
 
 export function Contact() {
   return (
-    <Container id='contact'>
+    <Container>
       <ImageContainer
         initial={{ opacity: 0 }}
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
       >
-        <img src={image} alt="photo of a woman with a laptop on her lap" />
+        <img src={contact} alt="photo of a woman with a laptop on her lap" />
       </ImageContainer>
       <TextContainer>
         <a

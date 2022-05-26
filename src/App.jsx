@@ -19,7 +19,7 @@ function App() {
       <NavBar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
       <Header isDarkTheme={isDarkTheme} />
       <About />
-      <Skill />
+      <Skill isDarkTheme={isDarkTheme} />
       <Portfolio />
       <Contact />
     </ThemeProvider>

@@ -13,27 +13,24 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --blue: #6055a5; // rgb(96, 85, 165)
-    --roxo: #5F458C; // rgb(95, 69, 140)
-    --denovo: #633BBC; // rgb(99, 59, 188)
-    --dark-blue: #3e3c49; // rgb(62, 60, 73)
-    --background-dark: #191622; // rgb(25, 22, 34)
-    --grayish-blue: #b9b6d3; // rgb(185, 182, 211)
-    --green: #38cc8c;
-    --red: #ff7a7a;
     --white: #FFF;
 
-    --font-base: #ef758c;
-    --font-base2: #F396AB;
-    --glassmorphism: #ffffffbf;
+    --grey-200: #ECECF3;
+    --grey-100: #F5F5FA;
 
-    --text: #1E2126;
-    --secondary: #5b7083;
-    --border: #ECECF3;
-    --pink: #f5426a;
-    --purple: #CF7CD5;
-    --yellow: #ffcf67;
-    --lightgrey: #F5F5FA;
+    --dark-600: #3e3c49;
+    --dark-800: #1E2126;
+    --dark-900: #191622;
+
+    --blue-500: #6055a5;
+
+    --purple-600: #5D4375;
+    --purple-900: #2E2139;
+
+    --red-300: #ef758c;
+    --red-400: #f5426a;
+    --malva-300: #CF7CD5;
+    --maize-300: #ffcf67;
 
     --spacing-1: 4px;
     --spacing-2: 8px;
