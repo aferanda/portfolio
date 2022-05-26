@@ -7,7 +7,7 @@ import docker from '../assets/icons/icons8-docker-512.png';
 import python from '../assets/icons/python-5.svg';
 import react from '../assets/icons/react-2.svg';
 import redux from '../assets/icons/redux.svg';
-import next from '../assets/icons/next-js-seeklogo.com.svg';
+import next from '../assets/icons/next-js.svg';
 import sass from '../assets/icons/sass-1.svg';
 import swift from '../assets/icons/swift.png';
 import typescript from '../assets/icons/typescript.png';

@@ -76,11 +76,11 @@ export const skills = [
     description: "Express",
     link: "https://expressjs.com/"
   },
-  {
-    img: icons.python,
-    description: "Python",
-    link: "https://www.python.org/"
-  },
+  // {
+  //   img: icons.python,
+  //   description: "Python",
+  //   link: "https://www.python.org/"
+  // },
   {
     img: icons.mysql,
     description: "MySQL",
@@ -96,16 +96,16 @@ export const skills = [
     description: "Prisma",
     link: "https://www.prisma.io/"
   },
-  {
-    img: icons.graphql,
-    description: "GraphQL",
-    link: "https://graphql.org/"
-  },
-  {
-    img: icons.mongodb,
-    description: "MongoDB",
-    link: "https://www.mongodb.com/"
-  },
+  // {
+  //   img: icons.graphql,
+  //   description: "GraphQL",
+  //   link: "https://graphql.org/"
+  // },
+  // {
+  //   img: icons.mongodb,
+  //   description: "MongoDB",
+  //   link: "https://www.mongodb.com/"
+  // },
   {
     img: icons.rtl,
     description: "React Testing Library",
@@ -116,9 +116,9 @@ export const skills = [
     description: "Jest",
     link: "https://jestjs.io/"
   },
-  {
-    img: icons.mocha,
-    description: "Mocha",
-    link: "https://mochajs.org/"
-  }
+  // {
+  //   img: icons.mocha,
+  //   description: "Mocha",
+  //   link: "https://mochajs.org/"
+  // }
 ]
