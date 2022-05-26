@@ -9,6 +9,7 @@ import { Contact } from './components/contact/Contact';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './styles/theme';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <Skill isDarkTheme={isDarkTheme} />
       <Portfolio />
       <Contact />
+      <Footer />
     </ThemeProvider>
   )
 }
