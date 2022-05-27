@@ -3,19 +3,19 @@ import styled from 'styled-components';
 
 export const Container = styled(motion.section)`
     display: flex;
-    align-items: center;
-    align-content: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 0 20% 100px;
-    position: relative;
-    width: 100%;
+    width: 60%;
     gap: 20px;
     z-index: 20px;
 
     @media (max-width: 900px) {
       height: auto;
       padding: 0 5%;
+      gap: 10px;
+      margin-bottom: 30px;
+      width: 100%;
     }
 
   div {

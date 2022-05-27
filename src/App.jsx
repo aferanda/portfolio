@@ -4,7 +4,6 @@ import { GlobalStyle } from './styles/global';
 import { NavBar } from './components/navbar/Navbar';
 import { Header } from './components/header/Header';
 import { About } from './components/about/About';
-import { Skill } from './components/skill/Skill';
 import { Contact } from './components/contact/Contact';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { ThemeProvider } from 'styled-components';
@@ -21,8 +20,7 @@ function App() {
       <GlobalStyle />
       <NavBar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
       <Header isDarkTheme={isDarkTheme} />
-      <About />
-      <Skill isDarkTheme={isDarkTheme} />
+      <About isDarkTheme={isDarkTheme} />
       <Portfolio />
       <Contact />
       <Footer />

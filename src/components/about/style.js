@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 export const Container = styled(motion.section)`
   display: flex;
-  align-items: center;
-  margin-top: 100px;
-  padding: 0 10% 100px;
-  position: relative;
-  width: 100%;
-  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 10% 70px;
+
+  img {
+    width: 100%;
+  }
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -17,12 +17,38 @@ export const Container = styled(motion.section)`
   }
 
   p {
+    font-family: Poppins, sans-serif;
     font-size: 1.2em;
     line-height: 30px;
-    text-align: center;
 
     @media (max-width: 900px) {
       text-indent: 30px;
+    }
+  }
+`
+
+export const TextContainer = styled.div`
+  width: 40%;
+  gap: 20px;
+
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-between;
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  img {
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  p {
+    @media (max-width: 900px) {
+      text-align: center;
     }
   }
 `
