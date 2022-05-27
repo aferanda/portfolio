@@ -110,6 +110,8 @@ export const TextContainer = styled(motion.div)`
 
   @media (max-width: 900px) {
     width: 100%;
+    margin-top: 30px;
+    align-items: center;
   }
 
   a {

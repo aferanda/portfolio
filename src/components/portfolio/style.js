@@ -22,6 +22,7 @@ export const Slider = styled(Swiper)`
 
   @media (max-width: 900px) {
     margin: 5% 0;
+    height: calc(100vh - 100px);
   }
 
   .swiper-slide {
@@ -57,8 +58,9 @@ export const Slider = styled(Swiper)`
       justify-content: center;
 
       @media (max-width: 900px) {
-        padding: 0 0 5%;
+        padding: 0;
         text-align: center;
+        width: 70%;
       }
 
       h3 {
@@ -93,5 +95,9 @@ export const Slider = styled(Swiper)`
         }
       }
     }
+  }
+
+  .swiper-pagination {
+
   }
 `

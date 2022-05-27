@@ -14,7 +14,6 @@ export const Container = styled(motion.header)`
 
   @media (max-width: 900px) {
     flex-direction: column;
-    height: auto;
     padding: 0 5%;
   }
 `
@@ -189,6 +188,12 @@ export const ImageContainer = styled(motion.div)`
   width: 50%;
 
   @media (max-width: 900px) {
+    width: 80%;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 720px) {
     width: 100%;
     padding: 50px 20px;
     text-align: center;
