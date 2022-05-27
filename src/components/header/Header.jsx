@@ -23,12 +23,12 @@ export function Header({ isDarkTheme }) {
       <TextContainer>
         <h1>Amanda Fernandes</h1>
         <h2><span ref={textInput}></span></h2>
-        <button
+        {/* <button
           type="button"
           onClick={() => Navigator}
         >
           <div>Contact me</div>
-        </button>
+        </button> */}
       </TextContainer>
       <ImageContainer
         initial={{ opacity: 0 }}

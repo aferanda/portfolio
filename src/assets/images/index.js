@@ -6,6 +6,7 @@ import signupform from './sign-up-form.png';
 import imgLight from './undraw_web_development_0l6v-dark.svg';
 import imgDark from './undraw_web_development_0l6v-dark.svg';
 import contact from './undraw_contact_us_re_4qqt.svg';
+import crud from './crud.png';
 
 export {
   todolist,
@@ -15,5 +16,6 @@ export {
   signupform,
   contact,
   imgLight,
-  imgDark
+  imgDark,
+  crud,
 }

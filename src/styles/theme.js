@@ -23,7 +23,7 @@ export const darkTheme = {
   background: 'var(--dark-900)',
   blob: `url(${blobDark})`,
   border: 'var(--purple-900)',
-  button: 'var(--purple-900)',
+  button: 'var(--red-300)',
   contact: 'var(--purple-900)',
   gradient: 'linear-gradient(to right, var(--blue-500), var(--malva-300), var(--red-400))',
   iconColor: 'var(--purple-900)',
