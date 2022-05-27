@@ -12,7 +12,9 @@ import { darkTheme, lightTheme } from './styles/theme';
 import { Footer } from './components/footer/Footer';
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const userTheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const isDark = userTheme.matches ? true : false;
+  const [isDarkTheme, setIsDarkTheme] = useState(isDark);
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
