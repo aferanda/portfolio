@@ -45,6 +45,7 @@ export const Slider = styled(Swiper)`
 
       @media (max-width: 900px) {
         padding: 0;
+        width: 80%;
       }
     }
 
@@ -95,9 +96,5 @@ export const Slider = styled(Swiper)`
         }
       }
     }
-  }
-
-  .swiper-pagination {
-
   }
 `

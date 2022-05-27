@@ -12,7 +12,6 @@ export const Container = styled(motion.section)`
 
     @media (max-width: 900px) {
       height: auto;
-      padding: 0 5%;
       gap: 10px;
       margin-bottom: 30px;
       width: 100%;
