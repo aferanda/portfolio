@@ -97,4 +97,8 @@ export const Slider = styled(Swiper)`
       }
     }
   }
+
+  .swiper-pagination-bullet {
+    background: ${props => props.theme.button}
+  }
 `

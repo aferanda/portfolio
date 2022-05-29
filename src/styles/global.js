@@ -32,6 +32,8 @@ export const GlobalStyle = createGlobalStyle`
     --malva-300: #CF7CD5;
     --maize-300: #ffcf67;
 
+    --swiper-theme-color: #ef758c;
+
     --spacing-1: 4px;
     --spacing-2: 8px;
     --spacing-3: 12px;
